@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+
+.carrinho {
+    width: 100%;
+    padding: 5%;
+    padding-top: 25px;
+    overflow:hidden;
+}
+
+.card-carrinho {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.img-produto {
+    width: 100px;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    float: left;
+}
+
+.descricao-carrinho {
+    width: 80%;
+    height: 75%;
+    border-radius: 0 5px 0 0;
+    color: white;
+    background: #2d426bd8;
+    float: left;
+}
+
+.texto-descricao-carrinho {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-excluir-iten {
+    width: 80%;
+    height: 25%;
+    border: none;
+    border-radius: 0 0 5px 0;
+    background: #2d426b;
+    color: white;
+    font-size: 0.9rem;
+    float: left;
+}
+
+.btn-excluir-iten:hover {
+    background: #ffeb77;
+    color: black;
+}
+
+.campo-operacao {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.btn-carrinho {
+    width: 40%;
+    height: 37px;
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    float: left;
+}
+
+.btn-green {
+    border-radius: 5px 0 0 5px;
+    background: #3f6b2d;
+}
+
+.btn-green:hover {
+    background: #4b8f30;
+}
+
+.btn-red {
+    border-radius: 0 5px 5px 0;
+    background: #6b2d2d;
+}
+
+.btn-red:hover {
+    background: #8f3030;
+}
+
+@media (max-width: 720px) {
+    .card-carrinho {width: 100%;height: 100px;}
+    .img-produto {width: 75px;}
+    .descricao-carrinho{width:75%;}
+    .h6-texto-descricao {font-size: 0.8rem;}
+    .h5-texto-descricao {font-size: 0.6rem;}
+    .btn-excluir-iten {width:75%;font-size: 0.7rem;}
+    .campo-operacao {margin-left: 70px}
+    .btn-carrinho {width: 37.5%;font-size: 0.7rem;}
+}
+
+@media (max-width: 450px) {
+.h6-texto-descricao {
+    font-size: 0.7rem;
+}}
+@media (max-width: 320px) {
+    .img-produto {width: 65px;}
+    .descricao-carrinho {width: 65%;}
+    .texto-descricao-carrinho {font-size: 0.6rem;}
+    .h5-texto-descricao {font-size: 0.5rem;}
+    .btn-excluir-iten {width: 65%;font-size: 0.7rem;}
+    .campo-operacao {margin-left: 60px}
+    .btn-carrinho {width: 32.5%;font-size: 0.6rem;}
+}
