@@ -7,6 +7,7 @@ body {
     padding: 5%;
     padding-top: 25px;
     overflow:hidden;
+    margin-bottom: 50px;
 }
 
 .card-carrinho {
@@ -101,7 +102,7 @@ body {
 
 .btn-frete:hover{
     background: #ffeb77;
-    color: #000000;;
+    color: #000000;
 }
 
 .btn-carrinho {
