@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/bootstrapMenu.css">
+        <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/index.css">
         <script type="text/javascript" src="js/jquery3.5.1.js"></script>
         <script type="javascript" src="js/bootstrap.min.js"></script>
@@ -33,43 +33,81 @@
         </div>
 
         <!--barra de menu -->
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <svg width="1.4em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
-                        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                    </svg>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pages/produtos.html">
-                    <svg width="1.3em" height="1.5em" viewBox="0 0 16 16" class="bi bi-pen-fill" fill="currentColor"xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z" />
-                </svg></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pages/carrinho.html">
-                    <svg width="1.4em" height="1.5em" viewBox="0 0 16 16" class="bi bi-basket-fill" fill="currentColor"xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
-                </svg></a>
-            </li>
-        </ul>
+        <div>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <svg width="1.4em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                            <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/produtos.html">
+                        <svg width="1.3em" height="1.5em" viewBox="0 0 16 16" class="bi bi-pen-fill" fill="currentColor"xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z" />
+                    </svg></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/carrinho.html">
+                        <svg width="1.4em" height="1.5em" viewBox="0 0 16 16" class="bi bi-basket-fill" fill="currentColor"xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
+                    </svg></a>
+                </li>
+            </ul>
+        </div>
 
         <!--imagem de fundo -->
         <div class="banner">
             <img src="img/banner02.png" class="banner-img"> 
-                <div class="texto-banner">
-                    <a href="pages/cadastro.html"><button type="button" class="btn btn-outline-warning btn-lg">Cadastrar</button></a>
-                </div>
+            <div class="texto-banner">
+                <a href="pages/cadastro.html"><button type="button" class="btn btn-outline-warning btn-lg">Cadastrar</button></a>
             </div>
         </div>
 
+        <!--produtos-->
+        <div class="produtos-index">
+            <div class="titulo-produto">
+                <h2><span class="badge badge-secondary span-color">Mais vendidos</span></h2>
+            </div>
+            <div class="cards-index">
+                <div class="card card-index" style="width: 18rem;">
+                    <img src="img/caneta01.jpg" class="card-img-top card-imagem" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Caneta The Caos</h5>
+                      <p class="card-text">Valor: $500,00</p>
+                      <a href="#" class="btn btn-card">Comprar</a>
+                    </div>
+                </div>
+    
+                <div class="card card-index" style="width: 18rem;">
+                    <img src="img/caneta01.jpg" class="card-img-top card-imagem" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Caneta The Caos</h5>
+                        <p class="card-text">Valor: $500,00</p>
+                        <a href="#" class="btn btn-card">Comprar</a>
+                    </div>
+                </div>
+    
+                <div class="card card-index" style="width: 18rem;">
+                    <img src="img/caneta01.jpg" class="card-img-top card-imagem" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Caneta The Caos</h5>
+                        <p class="card-text">Valor: $500,00</p>
+                        <a href="#" class="btn btn-card">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ver-mais-produto">
+                <a href="pages/produtos.html"><h3><span class="badge badge-secondary span-color color-mouse" >Ver mais</span></h3></a>
+            </div>
+        </div>
 
         <!--vídeo-->
         <div class="videoG"> 
                 <div class="video">
-                    <iframe src="https://www.youtube.com/embed/tyrVtwE8Gv0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/rAGAf8z09VE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div class="texto-Video">Somos lindos e as canetas mais ainda ;)</div>

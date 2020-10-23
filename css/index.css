@@ -5,6 +5,7 @@ body{
 
 .banner{
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .banner-img{
@@ -39,10 +40,63 @@ body{
     cursor: pointer;
 }
 
+.produtos-index{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.titulo-produto{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ver-mais-produto{
+    text-align: center;
+    margin-top: -15px;
+}
+
+.cards-index{
+    width: 100%;
+    padding: 5%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.card-index{
+    float: left; 
+    margin: 5px;  
+    margin-bottom: 0;
+}
+
+.card-imagem{
+}
+
+.btn-card{
+    background: #2d426b;
+    color: white;
+}
+
+.btn-card:hover{
+    background: #ffeb77;
+}
+
+.span-color{
+    background: #2d426b;
+    color: white;
+}
+
+.color-mouse:hover{
+    background: #ffeb77;
+    color: #000000c9;
+}
+
 .videoG{
     width: 100%;
-    margin-top: 75px;
-    padding: 5%;
+    padding: 10%;
     text-align: center;
 }
 
@@ -53,7 +107,8 @@ body{
 }
 
 .video {
-    overflow:hidden;padding-bottom:56.25%;position:relative;height:0;margin:30px 0px}
+    overflow:hidden;padding-bottom:56.25%;position:relative;height:0;margin:30px}
+
 .video iframe{left:0;top:0;height:100%;width:100%;position:absolute;}
 
 
