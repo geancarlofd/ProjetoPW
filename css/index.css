@@ -1,0 +1,68 @@
+
+body{
+    margin: 0;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner-img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.texto-banner {
+    margin: 0 auto;
+    text-align: center;
+    padding: 15%;
+    color: #000000;
+    z-index: 9999;
+    font-size: 2rem;
+}
+
+.botaoBanner {
+    margin-top: 50px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25%;
+    height: 6%;
+    background-color: #2d426b;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.botaoBanner:hover{
+    background-color: #ffeb77e5;
+    cursor: pointer;
+}
+
+.videoG{
+    width: 100%;
+    margin-top: 75px;
+    padding: 5%;
+    text-align: center;
+}
+
+.texto-Video {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.video {
+    overflow:hidden;padding-bottom:56.25%;position:relative;height:0;margin:30px 0px}
+.video iframe{left:0;top:0;height:100%;width:100%;position:absolute;}
+
+
+@media (max-width: 720px) {
+    .texto-banner{font-size: 1.5rem;}
+    .botaoBanner{font-size: 0.9rem;}
+}
+
+@media (max-width: 450px) {
+    .texto-banner{font-size: 1.2rem;}
+    .botaoBanner{font-size: 0.7rem;}
+}
