@@ -1,0 +1,43 @@
+
+body{
+    margin: 0;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner-img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.texto-banner {
+    margin: 0 auto;
+    text-align: center;
+    padding: 15%;
+    color: white;
+    z-index: 9999;
+    font-size: medium;
+}
+
+.botaoBanner {
+    margin-top: 10px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    height: 6%;
+    background-color: #2d426b;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.botaoBanner:hover{
+    background-color: #ffeb77e5;
+    cursor: pointer;
+}
+
+
