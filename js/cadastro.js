@@ -1,3 +1,6 @@
+var usuarios = [];
+var bdUser = window.localStorage;
+
 var globalErrorCampo = false;
 
 $(document).ready(function () {
@@ -11,16 +14,14 @@ $(document).ready(function () {
         verificador('#tNome');
         verificador('#tSobrenome');
         verificador('#tEmail');
-        verificador('#tMatricula');
-        verificador('#tUsuario');
         verificador('#tSenha');
         verificador('#tConfirmSenha');
         senhasConfirm();
 
         if (globalErrorCampo == false) {
+            adicionarUser();
             limparCampos();
-            alert('Formulario enviado com sucesso');
-            $("#tNome").focus();
+            window.location.href = "../index.html";
         }
     });
 });
@@ -55,12 +56,24 @@ function senhasConfirm() {
     }
 }
 
+function adicionarUser() {
+
+    aux = [];
+    aux.push($("#tNome").val());
+    aux.push($("#tSobrenome").val());
+    aux.push($("#tEmail").val());
+    aux.push($("#tSenha").val());
+
+    usuarios.push(aux);
+    console.log(aux);
+
+    bdUser.setItem("dados", JSON.stringify(usuarios));
+}
+
 function limparCampos() {
     $("#tNome").val("");
     $("#tSobrenome").val("");
     $("#tEmail").val("");
-    $("#tMatricula").val("");
-    $("#tUsuario").val("");
     $("#tSenha").val("");
     $("#tConfirmSenha").val("");
 }
