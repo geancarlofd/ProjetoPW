@@ -30,7 +30,7 @@ function verificarUsuario() {
     }
 }
 
-function limparImput(){
+function limparInput(){
     $("#inputUser").val("");
     $("#inputSenha").val("");
 }
