@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="css/index.css">
         <script type="text/javascript" src="js/jquery3.5.1.js"></script>
         <script type="javascript" src="js/bootstrap.min.js"></script>
-
+        <script type="text/javascript" src="js/mapa.js"></script>
+        <script type="text/javascript" src="js/comentario.js"></script>
+       
         <link rel="shortcut icon" href="img/logo3.png">
         <title>Loja das Canetas - Home</title>
 
@@ -114,17 +116,60 @@
             </div>
         </div>
 
-        <!--resto-->
-        <div class="externo-Endereco">
-            <div class="interno-Endereco">
-                <div class="texto-Endereco">
-                    <h3>Endereço: Rua Projeto Web, nº 1109, Centro - Curitiba/Pr</h3>
-                    <h3>CEP: 000000-000</h3>
-                    <h3>E-mail: projetoweb@gmail.com</h3>
-                    <h3>Contato: (41) 0000-0000</h3>
-                </div>
+        <!--Depoimento Clientes-->
+
+        <div>
+            <div>
+                <input type="text" placeholder="Comentário"  id="tComentario" class="caixa-comentario">
+                <input type="text" placeholder="Nome" id="tNome" class="caixa-comentario">
+                <button id="bAdicionar" class="bComentario">Adicionar</button> 
+                <button id="bLimpar" class="bComentario">Limpar</button>
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-header comentario-titulo">
+              Comentários
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Adorei a loja!</p>
+                <footer class="blockquote-footer comentario-cliente">Lino <cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div id="mostrar"></div>
+
+
+    <!--Rodapé-->
+    <div class="rodape">
+
+        <!--Endereco-->
+        <div class="texto-Endereco">
+            E-mail: projetoweb@gmail.com <br>
+            Contato: (41) 0000-0000 <br>
+            Endereço: Rua Saturnino de Brito, 74 - Jardim Botânico - Rio de Janeiro/RJ - 22470-030 <br>
+        </div>
+
+        <!--Redes Sociais-->
+        <div class="redes-sociais">
+            <div class="icon">
+                <img class="icon-redes" src="https://img.icons8.com/android/48/000000/facebook.png"/>
+                <img class="icon-redes" src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"/>
+                <img class="icon-redes" src="https://img.icons8.com/android/48/000000/twitter.png"/>
+            </div>
+        </div>
+
+         <!--Mapa-->
+        <div class="mapa">
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.5745952318234!2d-43.22014628503329!3d-22.965888984981845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd59ecec74a71%3A0x92ef70df2b0d9ac4!2sR.%20Saturnino%20de%20Brito%2C%2074%20-%20Lagoa%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022470-030!5e0!3m2!1spt-BR!2sbr!4v1605475430844!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    
     </div>
+
     </body>
 </html>
