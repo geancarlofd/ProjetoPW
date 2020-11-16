@@ -6,6 +6,9 @@ body {
     width: 100%;
     margin-bottom: 50px;
     margin-top: 50px;
+    padding:10%;
+    padding-top:0;
+    overflow: hidden;
 }
 
 .cards-produtos {
