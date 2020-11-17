@@ -35,3 +35,7 @@ body {
 .btn-card:hover {
     background: #ffeb77;
 }
+
+@media (max-width: 350px) {
+    .produtos-produtos {padding:0}
+}
