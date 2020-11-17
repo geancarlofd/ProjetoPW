@@ -25,12 +25,12 @@ body{
 
 .titulo-produto{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .ver-mais-produto{
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .produtos-index {
@@ -101,16 +101,14 @@ body{
 @media (max-width: 720px) {
     .texto-banner{font-size: 1.5rem;}
     .botaoBanner{font-size: 0.9rem;}
+    .texto-Video{font-size: 1rem;}
 }
 
 @media (max-width: 450px) {
     .texto-banner{font-size: 1.2rem;}
     .botaoBanner{font-size: 0.7rem;}
     .cards-index{padding: 1%;}
-    .card-index {
-        float: none;
-        overflow-wrap: break-word;
-    }
+    .card-index {float: none; overflow-wrap: break-word;}
     .produtos-index{
         width: 100%;
         margin-bottom: 50px;
@@ -123,6 +121,7 @@ body{
         justify-content: none;
         align-items: none;
     }
+    .texto-Video {font-size: 1rem;}
 }
 .caixa-comentario{
     width: 30%;

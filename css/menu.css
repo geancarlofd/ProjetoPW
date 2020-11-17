@@ -41,6 +41,32 @@ body{
     cursor:pointer;
 }
 
+.barraBusca{
+    background:#2d426b;
+}
+
+.input-Busca{
+    width:75%;
+    border:none;
+    border-radius: 5px;
+    margin-bottom:5px ;
+    margin-left:10px;
+    margin-top:10px;
+    padding-left:20px ;
+}
+
+.btn-buscar{
+    width:20%;
+    background:#ffeb77;
+    border:none;
+    border-radius:5px;
+    text-align: center;
+    font-size:1rem;
+}
+
+.btn-buscar:hover{
+    background:#2d426b;
+}
 
 @media (max-width: 720px) {
     .texto-menu {font-size: 1.4rem;}
@@ -54,6 +80,9 @@ body{
 
 @media (max-width: 320px) {
     .texto-menu {font-size: 1.2rem;}
+    .input-Busca{
+        margin-left:5px;
+    }
 }
 
 @media (max-width: 300px) {
