@@ -1,25 +1,28 @@
 
-var banco = window.localStorage;
+var bdComentario = window.localStorage;
+var dadosC = [["Adorei a loja!", "Lino"]];
 
 $(document).ready(function(){
 
+    fLocalMostraComentario();
     fLocalMostraDados();
 
     $("#bAdicionar").click(function(){
 
-        var dados = JSON.parse(banco.getItem("dadosUsuarios"));
+        var comentarios = JSON.parse(bdComentario.getItem("dadosUsuarios"));
+        
         var comentario = $("#tComentario").val();
         var nome = $("#tNome").val();
-
         var aux = [];
+        
         aux.push(comentario);
         aux.push(nome);
 
-        dados.push(aux);
+        comentarios.push(aux);
 
-        console.log(dados);
+        console.log(comentarios);
 
-        banco.setItem("dadosUsuarios", JSON.stringify(dados));
+        bdComentario.setItem("dadosUsuarios", JSON.stringify(comentarios));
 
         fLocalMostraDados();
         
@@ -34,7 +37,7 @@ $(document).ready(function(){
 
 function fLocalMostraDados(){
 
-    var dados = JSON.parse(banco.getItem("dadosUsuarios"));
+    var dados = JSON.parse(bdComentario.getItem("dadosUsuarios"));
 
     $("#mostrar").html("");
     
@@ -55,4 +58,26 @@ function fLocalMostraDados(){
             $("#mostrar").append(conteudo);
         }
     }
+}
+
+function fLocalMostraComentario(){
+
+    $("#mostrar").html("");
+    
+        for(var i = 0; i< dadosC.length; i++){
+        
+            var conteudo = "";      
+    
+            conteudo += '<div class="card">';
+            conteudo += '<div class="card-body">';
+            conteudo += '<blockquote class="blockquote mb-0">';
+            conteudo += '<p id="#tComentario">'+ dadosC[i][0] +'</p>';
+            conteudo += '<footer class="blockquote-footer comentario-cliente" id="tNome">'+ dadosC[i][1] +'</footer>'
+            conteudo += '</blockquote>';
+            conteudo += '</div>';
+            conteudo += '</div>';
+    
+            $("#mostrar").append(conteudo);
+        }
+    
 }
