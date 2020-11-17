@@ -25,6 +25,7 @@ function atualizarCarrinho() {
     if (produtos != null){
         for (var i = 0; i < produtos.length; i++) {
             var conteudo = "";
+            var valorProduto = parseFloat(produtos[i][1]);
 
             conteudo += '<div class="card-carrinho">';
             conteudo += '<img src="../img/' + produtos[i][2] + '" class="img-produto" />';
@@ -32,7 +33,7 @@ function atualizarCarrinho() {
             conteudo += '<div class="texto-descricao-carrinho">';
             conteudo += '<h5 class="h6-texto-descricao">' + produtos[i][0] + '</h5>';
             conteudo += '<h6 class="h5-texto-descricao">Quantidade: 1</h6>';
-            conteudo += '<h6 class="h5-texto-descricao">' + produtos[i][1] + '</h6>';
+            conteudo += '<h6 class="h5-texto-descricao">' + valorProduto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });+ '</h6>';
             conteudo += '</div>';
             conteudo += '</div>';
             conteudo += '<div><button idExcluir='+i+' class="btn-excluir-iten">Excluir</button></div>';
@@ -55,7 +56,7 @@ function atualizarValorCarrinho(permitir){
     var total = 0;
     if(permitir == true){
         for (var i = 0; i < produtos.length; i++) {
-            subtotal += parseInt(produtos[i][1]);
+            subtotal += parseFloat(produtos[i][1]);
         }
     }
     console.log(subtotal);
