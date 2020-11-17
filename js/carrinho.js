@@ -70,7 +70,7 @@ function atualizarCarrinho() {
             conteudo += '<h6 class="h5-texto-descricao">' + valorProduto.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); + '</h6>';
             conteudo += '</div>';
             conteudo += '</div>';
-            conteudo += '<div><button idExcluirIndex=' + i + ' class="btn-excluir-iten btn-excluir-iten-index">Excluir</button></div>';
+            conteudo += '<div><button idExcluirIndex=' + i + ' class="btn-excluir-iten-index btn-excluir-iten">Excluir</button></div>';
             conteudo += '</div><br></br>';
 
             $("#carrinho").append(conteudo);
