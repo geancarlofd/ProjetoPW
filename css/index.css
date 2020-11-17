@@ -23,12 +23,6 @@ body{
     font-size: 2rem;
 }
 
-.produtos-index{
-    width: 100%;
-    margin-bottom: 50px;
-    margin-top: 100px;
-}
-
 .titulo-produto{
     text-align: center;
     margin-bottom: 20px;
@@ -36,9 +30,21 @@ body{
 
 .ver-mais-produto{
     text-align: center;
-    margin-top: -15px;
+    margin-top: 15px;
 }
 
+.produtos-index {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding:10%;
+    padding-top:0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
 .cards-index{
     width: 100%;
     padding: 5%;
@@ -50,8 +56,8 @@ body{
 }
 
 .card-index{
-    float: left; 
-    margin: 5px;  
+    float: left;
+    margin: 5px;
     margin-bottom: 0;
 }
 
@@ -100,8 +106,24 @@ body{
 @media (max-width: 450px) {
     .texto-banner{font-size: 1.2rem;}
     .botaoBanner{font-size: 0.7rem;}
+    .cards-index{padding: 1%;}
+    .card-index {
+        float: none;
+        overflow-wrap: break-word;
+    }
+    .produtos-index{
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding:10%;
+        padding-top:0;
+        overflow: hidden;
+        display:block;
+        flex-direction: none;
+        justify-content: none;
+        align-items: none;
+    }
 }
-
 .caixa-comentario{
     width: 30%;
     height: 35px;
