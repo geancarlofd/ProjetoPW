@@ -79,5 +79,6 @@ function fLocalMostraComentario(){
     
             $("#mostrar").append(conteudo);
         }
+        bdComentario.setItem("dadosUsuarios", JSON.stringify(dadosC));
     
 }
