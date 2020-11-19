@@ -90,12 +90,57 @@ body{
     font-size: 1.5rem;
     margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border:2px solid #9c9c9c;
 }
 
 .video {
-    overflow:hidden;padding-bottom:56.25%;position:relative;height:0;margin:30px}
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin:30px;
+    border:5px solid #2d426b;
+    }
 
 .video iframe{left:0;top:0;height:100%;width:100%;position:absolute;}
+
+.caixa-comentario {
+    width: 30%;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    background-color: #ffeb77;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px#2d426b;
+    border: none;
+    font-family: 'Arial';
+    font-size: 1.2rem;
+}
+
+.bComentario {
+    width: 15%;
+    height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #2d426b;
+    color: white;
+    border: 1px;
+    font-size: 1rem;
+}
+
+.comentario-titulo {
+    background-color: #2d426b;
+    color: white;
+    border: none;
+}
+
+.comentario-cliente {
+    margin-bottom: 10px;
+}
 
 
 @media (max-width: 720px) {
@@ -122,42 +167,8 @@ body{
         align-items: none;
     }
     .texto-Video {font-size: 1rem;}
-}
-.caixa-comentario{
-    width: 30%;
-    height: 35px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    background-color: #ffeb77;
-    color: black;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: solid 1px#2d426b;
-    border: none;
-    font-family: 'Arial';
-    font-size: 1.2rem;
+    .caixa-comentario {
+        margin-left: 5px;}
 }
 
-.bComentario{
-    width: 15%;
-    height: 35px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color:#2d426b;
-    color: white;
-    border: 1px;
-    font-size: 1rem;
-}
-
-.comentario-titulo{
-    background-color: #2d426b;
-    color: white;
-    border: none;
-}
-
-.comentario-cliente{
-    margin-bottom: 10px;
-}
 

@@ -7,6 +7,18 @@ $(document).ready(function () {
         limparErro();
         verificarUsuario();
     });
+    $("#iconFace").click(function () {
+        window.location.href = "https://m.facebook.com/dinosandcomics/"
+    });
+    $("#iconInsta").click(function () {
+        window.location.href = "https://www.instagram.com/canetas.personalizada/"
+    });
+    $("#iconTwi").click(function () {
+        window.location.href = "https://twitter.com/bic_brasil"
+    });
+    $("#iconPin").click(function () {
+        window.location.href = "https://br.pinterest.com/pin/491173903086032213/"
+    });
 });
 
 function verificarUsuario() {
